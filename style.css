@@ -1,7 +1,53 @@
-h1{
- font-size: 30px;
- font-family: cursive;
+/*
+.element{
+transition: [property] [duration] [ease] [delay]
 }
-p{
- font-family: cursive;
+
+example:
+.element{
+transition: opacity 300ms ease-in-out 1s;
+}
+
+animatable-
+font-size:
+background-color:
+width:
+left:
+
+performant-
+position:
+scale:
+rotation:
+opacity:
+
+
+cannot-
+display:
+font-family:
+position:
+
+
+
+*/
+
+body{
+ padding: 50px;
+}
+
+.trigger{
+ width: 200px;
+ height: 200px;
+ border: 20px solid #999;
+ background: #ddd;
+}
+.box{
+ display: inline-block;
+ background: pink;
+ width: 200px;
+ height: 200px;
+transition: transform 300ms ease-in-out;
+pointer-events: none;
+}
+.trigger.clicked .box{
+ transform: translate(200px, 150px)rotate(20deg);
 }
